@@ -61,13 +61,13 @@ mapbox-globe-viewer/
 ├── index.html            # HTML template
 ├── package.json          # Dependencies and scripts
 ├── vite.config.js        # Vite configuration
-├── ARTICLE.md           # Comprehensive Mapbox GL JS guide
+├── GUIDE.md           # Comprehensive Mapbox GL JS guide
 └── README.md            # This file
 ```
 
 ## Documentation
 
-See **[ARTICLE.md](./ARTICLE.md)** for Mapbox GL JS concepts and implementation details.
+See **[GUIDE.md](./GUIDE.md)** for Mapbox GL JS concepts and implementation details.
 
 ## Core Concepts
 
