@@ -1,0 +1,18 @@
+/**
+ * @fileoverview Main application styles
+ * @module App.css
+ */
+
+.app {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+		"SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #f5f5f7;
+	transition: background-color 0.3s ease;
+}
+
+.app.dark {
+	background: #1c1c1e;
+}

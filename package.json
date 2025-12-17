@@ -1,0 +1,36 @@
+{
+  "name": "mapbox-globe-viewer",
+  "version": "1.0.0",
+  "description": "Interactive 3D globe with user markers built with React and Mapbox",
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "mapbox",
+    "globe",
+    "3d",
+    "maps",
+    "markers",
+    "geolocation"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "mapbox-gl": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-map-gl": "^7.1.7",
+    "use-supercluster": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}

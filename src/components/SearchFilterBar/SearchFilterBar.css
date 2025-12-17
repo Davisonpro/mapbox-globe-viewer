@@ -1,0 +1,103 @@
+.search-filter-bar {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	z-index: 1000;
+	display: flex;
+	gap: 12px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.filter-toggle-btn {
+	position: relative;
+	width: 44px;
+	height: 44px;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.4) 0%,
+		rgba(255, 255, 255, 0.2) 100%
+	);
+	backdrop-filter: blur(40px) saturate(200%);
+	-webkit-backdrop-filter: blur(40px) saturate(200%);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #1d1d1f;
+	font-size: 16px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
+		0 2px 8px rgba(0, 0, 0, 0.08),
+		inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.filter-toggle-btn:hover {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.5) 0%,
+		rgba(255, 255, 255, 0.3) 100%
+	);
+	transform: scale(1.05);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+		0 4px 12px rgba(0, 0, 0, 0.1),
+		inset 0 1px 0 rgba(255, 255, 255, 0.6);
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-toggle-btn.active {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 122, 255, 0.25) 0%,
+		rgba(0, 122, 255, 0.15) 100%
+	);
+	color: #007AFF;
+	border-color: rgba(0, 122, 255, 0.4);
+	box-shadow: 0 8px 32px rgba(0, 122, 255, 0.2),
+		0 2px 8px rgba(0, 122, 255, 0.15),
+		inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.filter-badge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 8px;
+	height: 8px;
+	background: #FF3B30;
+	border-radius: 50%;
+	border: 1.5px solid white;
+}
+
+/* Dark Mode */
+.app.dark .filter-toggle-btn {
+	background: linear-gradient(
+		135deg,
+		rgba(28, 28, 30, 0.6) 0%,
+		rgba(28, 28, 30, 0.4) 100%
+	);
+	border-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.app.dark .filter-toggle-btn:hover {
+	background: linear-gradient(
+		135deg,
+		rgba(28, 28, 30, 0.7) 0%,
+		rgba(28, 28, 30, 0.5) 100%
+	);
+}
+
+.app.dark .filter-toggle-btn.active {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 122, 255, 0.3) 0%,
+		rgba(0, 122, 255, 0.2) 100%
+	);
+	border-color: rgba(0, 122, 255, 0.4);
+	color: #0A84FF;
+}
+

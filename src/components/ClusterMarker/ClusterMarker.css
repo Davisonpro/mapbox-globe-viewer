@@ -1,0 +1,35 @@
+.cluster-marker {
+	background: #007AFF;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #ffffff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	font-weight: 600;
+}
+
+.cluster-marker:hover {
+	transform: scale(1.1);
+	box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+	z-index: 100;
+}
+
+.cluster-count {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+.app.dark .cluster-marker {
+	background: #0A84FF;
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.app.dark .cluster-marker:hover {
+	box-shadow: 0 4px 12px rgba(10, 132, 255, 0.4);
+}
+
