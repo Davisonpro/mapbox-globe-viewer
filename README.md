@@ -31,7 +31,7 @@ React application with 3D globe visualization using Mapbox GL JS.
    npm run dev
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 mapbox-globe-viewer/
@@ -133,7 +133,7 @@ See **[GUIDE.md](./GUIDE.md)** for Mapbox GL JS concepts and implementation deta
 
 **Build errors:** Clear `node_modules` and reinstall, verify Node.js 16+
 
-## 📝 License
+## License
 
 MIT License - feel free to use this project for your own purposes.
 
